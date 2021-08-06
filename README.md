@@ -2,6 +2,8 @@
 
 Note: To produce the data use the producer https://github.com/productiveAnalytics/amazon-kinesis-replay-producer (Fork of https://github.com/aws-samples/amazon-kinesis-replay)
 
+Follow the instructions on https://streaming-analytics.workshop.aws/flink-on-kda to run setup KDA, setup ElasticSearch, run producer, and run the consumer application (this) on KDA.
+
 Sample Apache Flink application that can be deployed to Kinesis Analytics for Java. It reads taxi events from a Kinesis data stream, processes and aggregates them, and ingests the result to an Amazon Elasticsearch Service cluster for visualization with Kibana.
 
 To see the sample application in action, simply execute the following CloudFormation template in your own AWS account. The template first builds the Flink application that is analyzing the incoming taxi trips, including the Flink Kinesis Connector that is required to read data from a Kinesis data stream, and then creates the infrastructure and submits the Flink application to KDA for Java.
