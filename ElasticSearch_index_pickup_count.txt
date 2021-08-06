@@ -1,0 +1,16 @@
+PUT pickup_count
+{
+  "mappings": {
+    "properties": {
+      "location": {
+        "type": "geo_point"
+      },
+      "pickup_count": {
+        "type": "long"
+      },
+      "timestamp": {
+        "type": "date"
+      }
+    }
+  }
+}
