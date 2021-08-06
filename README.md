@@ -1,4 +1,6 @@
-## Amazon Kinesis Analytics Taxi Consumer
+## Amazon Kinesis Flink Analytics (Consumer that uses Apache Flink on KDA and persists into AWS ElasticSearch)
+
+Note: To produce the data use the producer https://github.com/productiveAnalytics/amazon-kinesis-replay-producer (Fork of https://github.com/aws-samples/amazon-kinesis-replay)
 
 Sample Apache Flink application that can be deployed to Kinesis Analytics for Java. It reads taxi events from a Kinesis data stream, processes and aggregates them, and ingests the result to an Amazon Elasticsearch Service cluster for visualization with Kibana.
 
